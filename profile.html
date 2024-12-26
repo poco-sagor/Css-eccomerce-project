@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is an Ecommerce website for Poco Express using only html, css and js.">
+  <title>Ecommerce | Website</title>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <!--  Roboto Monot font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <!-- Kanit font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- navbar starts here -->
+  <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+   <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around ">
+      <li class="nav_list">
+        <a href="index.html" class="nav_link">Home</a>
+      </li>
+      <li class="nav_list">
+        <a href="register.html" class="nav_link">Register</a>
+      </li>
+      <li class="nav_list">
+        <a href="login.html" class="nav_link">Login</a>
+      </li>
+      <li class="nav_list">
+        <a href="index.html" class="nav_link">Logout</a>
+      </li>
+      <li class="nav_list">
+        <a href="contact.html" class="nav_link">Contact</a>
+      </li>
+      <li class="nav_list">
+        <a href="profile.html" class="nav_link"><img class="profile-icon" src="./img/profile.JPG" alt="profile icon"></a>
+      </li>
+    </ul>
+
+    <ul class="nav-lower flex-space-around">
+      <li class="nav_list">
+        <a href="index.html" class="nav_brand nav_link">Naruto Uzumaki</a>
+      </li>
+      <li class="nav_list">
+        <a href="cart.html" class="nav_link"><span><i class="fa-solid fa-shopping-cart"></i></span>Cart 2 products - $124.40</a>
+      </li>
+    </ul>
+   </nav>
+  <!-- navbar ends here -->
+
+  <main>
+    <section class="profile-section flex-center">
+      <h2 class="section-title text-center">User Profile</h2>
+      <div class="card flex-center">
+        <img class="profile-img" src="./img/profile.JPG" alt="profile image">
+        <h2 class="profile-name">Naruto Uzumaki</h2>
+        <p class="profile-email">Sagormia250@gmail.com</p>
+        <p class="profile-about">I love to buy gadgets</p>
+        <div class="profile-buttons">
+          <button class="btn profile_edit-btn">
+            <i class="far fa-edit fa-2x"></i>
+          </button>
+          <button class="btn profile_delete-btn">
+            <i class="far fa-trash-alt fa-2x"></i>
+          </button> 
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer starts here -->
+   <footer class="footer flex-space-around">
+    <div class="flex-space-around">
+      <label for="subscribe">Subscribe to Newsletter: </label>
+      <input class="footer-input" type="email" name="subscribe" id="subscribe" placeholder="Enter Your Email">
+      <button class="btn subscribe-btn" type="button">Subscribe</button>
+    </div>
+    <div>
+      &copy;Copyright 2024 Naruto Uzumaki. All rights reserved
+    </div>
+   </footer>
+  <!-- footer ends here -->
+
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
